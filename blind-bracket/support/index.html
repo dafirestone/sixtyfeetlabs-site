@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blind Bracket Support</title>
+<meta name="description" content="Help with the Blind Bracket iPhone and iPad app, and how to reach Sixty Feet Labs.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23123B2E'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' fill='%23F2EFE6' text-anchor='middle'%3E60%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#16211d; --ink-soft:#4a5a54; --ink-faint:#7c8a85;
+    --bg:#faf8f4; --panel:#ffffff; --line:#e2ded4;
+    --accent:#1d5c46; --accent-soft:#e8f0ec;
+    --max:760px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#eef1ef; --ink-soft:#a9b6b1; --ink-faint:#7e8c87;
+      --bg:#121615; --panel:#191f1d; --line:#2a3331;
+      --accent:#6fbfa0; --accent-soft:#1b2724;
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 24px}
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+  header{border-bottom:1px solid var(--line); background:var(--panel)}
+  .bar{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:18px 24px; flex-wrap:wrap}
+  .brand{display:flex; align-items:center; gap:12px; font-weight:600; color:var(--ink)}
+  .brand:hover{text-decoration:none}
+  .mark{width:34px;height:34px;border-radius:8px;background:var(--accent);color:#fff;
+        display:grid;place-items:center;font:600 14px/1 Georgia,serif;flex:0 0 auto}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .mark{color:#0f1614}}
+  nav{display:flex; gap:20px; font-size:14.5px}
+  nav a{color:var(--ink-soft)}
+  nav a[aria-current]{color:var(--ink); font-weight:600}
+  @media (max-width:440px){.bar{gap:10px} .brand{gap:9px; font-size:15px} nav{gap:14px; font-size:14px}}
+  .hero{padding:52px 0 34px; border-bottom:1px solid var(--line)}
+  .eyebrow{display:inline-block; font-size:12.5px; letter-spacing:.11em; text-transform:uppercase;
+           color:var(--accent); background:var(--accent-soft); padding:5px 11px; border-radius:99px; margin-bottom:18px; font-weight:600}
+  h1{margin:0 0 14px; font-size:clamp(28px,5vw,40px); line-height:1.15; letter-spacing:-.02em; font-weight:650}
+  .lede{font-size:clamp(17px,2.2vw,19px); color:var(--ink-soft); margin:0}
+  .meta{font-size:14.5px; color:var(--ink-faint); margin-top:18px}
+  main section{padding:34px 0; border-bottom:1px solid var(--line)}
+  h2{margin:0 0 14px; font-size:20px; letter-spacing:-.01em; font-weight:650}
+  h3{margin:20px 0 6px; font-size:16px; font-weight:600}
+  p{margin:0 0 14px}
+  p:last-child{margin-bottom:0}
+  ul{margin:0 0 14px; padding-left:22px}
+  li{margin:0 0 8px}
+  details{border-bottom:1px solid var(--line); padding:14px 0}
+  details:first-of-type{border-top:1px solid var(--line)}
+  summary{cursor:pointer; font-weight:600; list-style-position:outside}
+  details p{margin:10px 0 4px; color:var(--ink-soft)}
+  .contact{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:22px}
+  footer{padding:30px 0 44px; color:var(--ink-faint); font-size:14px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="/">
+      <span class="mark">60</span>
+      <span>Sixty&nbsp;Feet&nbsp;Labs</span>
+    </a>
+    <nav aria-label="Blind Bracket">
+      <a href="/blind-bracket/privacy/">Privacy</a>
+      <a href="/blind-bracket/support/" aria-current="page">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Blind Bracket</span>
+      <h1>Support</h1>
+      <p class="lede">Help with Blind Bracket, the college basketball bracket you fill out with the names hidden. For anything not answered here, email us. A person reads every message.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="contact">
+        <h2>Contact us</h2>
+        <p>Email <a href="mailto:drew@sixtyfeetlabs.com?subject=Blind%20Bracket%20support">drew@sixtyfeetlabs.com</a>. Tell us what you were doing, what you expected, and what happened instead. The model of iPhone or iPad helps too.</p>
+        <p>Sixty Feet Labs LLC · Bellaire, Texas, United States</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Common questions</h2>
+
+      <details>
+        <summary>How does it work?</summary>
+        <p>Every game in the tournament shows two invented mascots and the numbers: efficiency, shooting, turnovers, rebounding and more. Choose the eight stats you trust, pick all 63 games from the numbers alone, then open the reveal to see which real teams you picked and how your bracket scored against what actually happened.</p>
+      </details>
+
+      <details>
+        <summary>How is my bracket scored?</summary>
+        <p>Each correct pick earns 10 points in the first round, then 20, 40, 80, 160 and 320 in the championship. Every round is worth 320 points in total, and a perfect bracket scores 1,920.</p>
+      </details>
+
+      <details>
+        <summary>Do I need an account?</summary>
+        <p>No. You can play every tournament without one. An account lets you post a finished bracket to the leaderboard and create or join private pools.</p>
+      </details>
+
+      <details>
+        <summary>I forgot my password.</summary>
+        <p>On the sign-in screen, tap <strong>Forgot your password?</strong>, enter your email, and we will send you a code. Type the code into the app with your new password. If the email does not arrive within a few minutes, check your spam folder, then request a new code.</p>
+      </details>
+
+      <details>
+        <summary>How do I delete my account?</summary>
+        <p>Open <strong>Account</strong> in the app and tap <strong>Delete my account</strong>. Your account, display name and every bracket you have posted are removed immediately and permanently. You can also email us and we will do it for you.</p>
+      </details>
+
+      <details>
+        <summary>Which tournaments can I play?</summary>
+        <p>Past tournaments are playable at any time and are scored against the real results. Every number you see is what was known on the day the field was announced, so a past bracket is as blind as a live one. When a new tournament is announced, it appears in the app with no update needed.</p>
+      </details>
+
+      <details>
+        <summary>How do private pools work?</summary>
+        <p>Create a pool from the leaderboard, share its code, and anyone with the code can join. Each member enters one finished bracket per pool and can swap it for another until a live tournament tips off, when entries lock.</p>
+      </details>
+
+      <details>
+        <summary>What do I need to run it?</summary>
+        <p>An iPhone or iPad running iOS 15 or later. You need an internet connection to sign in, post brackets and download new tournaments; past tournaments you have already opened also work offline.</p>
+      </details>
+
+      <details>
+        <summary>Where do the stats come from?</summary>
+        <p>We compute them ourselves from public box scores of every game played up to the day the field was announced. Nothing from after that day is used, so no number gives away a result.</p>
+      </details>
+
+      <details>
+        <summary>What happens to my information?</summary>
+        <p>Very little is collected, and none of it is used for ads or sold. The <a href="/blind-bracket/privacy/">privacy policy</a> has the details.</p>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 Sixty Feet Labs LLC · <a href="/blind-bracket/privacy/">Privacy</a> · <a href="/">Company</a><br>
+    Not affiliated with, endorsed by, or sponsored by the NCAA, or any school, conference, club, or league.</p>
+  </div>
+</footer>
+
+</body>
+</html>
